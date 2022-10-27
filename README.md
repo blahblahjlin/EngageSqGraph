@@ -17,7 +17,7 @@ I think my greatest pain will always be setting up the spfx dev environment. It 
 
 ·       How cool it looks and feels (great UI/UX) > to be honest I'm not a UI person so I'm not that great in designing. Give me a mock up however and I'm gold.
 
-·       How useful the component might be - this dashboard is quite useful for us - defense has us locked down pretty tight so to get all the info in one place is great. Given time I will probably tidy it up to include onedrive - recent docs and possibly a search.
+·       How useful the component might be - this dashboard could be quite useful for my current workplace - defense has us locked down pretty tight so to get all the info in one place is great. Given time I will probably tidy it up to include onedrive - recent docs and possibly a search. 
 
 ·       Integrating Office UI Fabric - done
 

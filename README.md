@@ -2,30 +2,37 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Quick demo of the graph solutions
 
-[picture of the solution in action, if possible]
+·       How cool it looks and feels (great UI/UX) > to be honest I'm not a UI person so I'm not that great in designing. Give me a mock up however and I'm gold.
 
-## Used SharePoint Framework Version
+·       How useful the component might be - this dashboard is quite useful for us - defense has us locked down pretty tight so to get all the info in one place is great. Given time I will probably tidy it up to include onedrive - recent docs and possibly a search.
 
-![version](https://img.shields.io/badge/version-1.13-green.svg)
+·       Integrating Office UI Fabric - done
 
-## Applies to
+·       Including a continuous integration pipeline  - I normally do pipelines in azure dev ops > never done it any other way
 
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
+·       Any interesting and practical software patterns 
 
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
+·       Use of appropriate PnP libraries - pnp libraries to get basic user info
 
-## Prerequisites
+·       Working as a MS Teams tab and utilising the Teams context - n/a
 
-> Any special pre-requisites?
+·       Support for section background theming - n/a
 
-## Solution
+·       Support as a full-bleed web part - done
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+·       Support dynamic data between web parts - didn't imagine a situation where i'd need this in the current solution. Maybe going forward could split out the basic info, emails and one drive into seperate items and feed it from the basic info wp
+
+·       Integration of other popular and modern React/JavaScript libraries - i've used moment js to tidy up the date display
+
+·       Utilising the Microsoft Graph for operations other than just reading data - was thinking of doing a 'reply email' functionality using https://graph.microsoft.com/v1.0/me/sendMail
+
+·       Utilising the SharePoint REST API to interact with SharePoint data (use of the SP Search API qualifies this) - no I didnt do this > this._context.pageContext.web.absoluteUrl + "/_api/search/query?querytext=" + query > something along those lines 
+
+·       Highly accessible (WCAG AA+) - Didn't know this existed > but no i'd assume mine is D is something with fluent ui holding me up somewhat.
+
+·       Unit tests - nope
 
 ## Version history
 
@@ -52,22 +59,10 @@ Short summary on functionality and used technologies.
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+Uses Graph to Grab user data as well as fetching the top 5 most recent user emails. 
 
-This extension illustrates the following concepts:
+Utilises the fluent ui, moment for date display parsing.
 
-- topic 1
-- topic 2
-- topic 3
+I was going to do the display one drive underneath it but ran out of time. Wife is having a weekend away. Yey for a crying baby for the weekend! wooo
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
-
-## References
-
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+Note: not going to lie I did a rush job on this having dealt with graph in a minimal sense. I did switch from the PNP libraries for graph to extract the emails to MSGraphClientV3. It was for some very strange reason not pushing across any data. so switched to this MSGraphClientV3 and was able to extract it out using: https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/Messages .. got to love graph explorer.

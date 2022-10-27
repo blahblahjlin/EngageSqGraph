@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "engage-sq-graph-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/engageSqGraph/EngageSqGraphWebPart.js",
+          "manifest": "./src/webparts/engageSqGraph/EngageSqGraphWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EngageSqGraphWebPartStrings": "lib/webparts/engageSqGraph/loc/{locale}.js"
+  }
+}

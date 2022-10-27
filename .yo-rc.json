@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "engage-sq-graph",
+    "libraryId": "c650817f-10d7-4390-b536-71ba55f332cc",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "EngageSqGraph",
+    "solutionShortDescription": "EngageSqGraph description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

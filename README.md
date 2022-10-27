@@ -4,6 +4,15 @@
 
 Quick demo of the graph solutions
 
+
+Uses Graph to Grab user data as well as fetching the top 5 most recent user emails. 
+
+Utilises the fluent ui, moment for date display parsing.
+
+I was going to do the display one drive underneath it but ran out of time. Wife is having a weekend away. Yey for a crying baby for the weekend! wooo
+
+Note: not going to lie I did a rush job on this having dealt with graph in a minimal sense. I did switch from the PNP libraries for graph to extract the emails to MSGraphClientV3. It was for some very strange reason not pushing across any data. so switched to this MSGraphClientV3 and was able to extract it out using: https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/Messages .. got to love graph explorer.
+
 ·       How cool it looks and feels (great UI/UX) > to be honest I'm not a UI person so I'm not that great in designing. Give me a mock up however and I'm gold.
 
 ·       How useful the component might be - this dashboard is quite useful for us - defense has us locked down pretty tight so to get all the info in one place is great. Given time I will probably tidy it up to include onedrive - recent docs and possibly a search.
@@ -56,13 +65,3 @@ Quick demo of the graph solutions
   - **gulp serve**
 
 > Include any additional steps as needed.
-
-## Features
-
-Uses Graph to Grab user data as well as fetching the top 5 most recent user emails. 
-
-Utilises the fluent ui, moment for date display parsing.
-
-I was going to do the display one drive underneath it but ran out of time. Wife is having a weekend away. Yey for a crying baby for the weekend! wooo
-
-Note: not going to lie I did a rush job on this having dealt with graph in a minimal sense. I did switch from the PNP libraries for graph to extract the emails to MSGraphClientV3. It was for some very strange reason not pushing across any data. so switched to this MSGraphClientV3 and was able to extract it out using: https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/Messages .. got to love graph explorer.

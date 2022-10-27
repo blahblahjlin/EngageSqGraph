@@ -11,13 +11,13 @@ Utilises the fluent ui, moment for date display parsing.
 
 I was going to do the display one drive underneath it but ran out of time. Wife is having a weekend away. Yey for a crying baby for the weekend! wooo
 
-Note: not going to lie I did a rush job on this having dealt with graph in a minimal sense. I did switch from the PNP libraries for graph to extract the emails to MSGraphClientV3. It was for some very strange reason not pushing across any data (this wasted alot of my time). So switched to  MSGraphClientV3 (https://learn.microsoft.com/en-us/sharepoint/dev/spfx/use-msgraph) and was able to extract it out using: https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/Messages .. got to love graph explorer.
+Note: not going to lie I did a rush job on this having dealt with graph in a minimal sense. I did switch from the PNP libraries for graph to extract the emails to MSGraphClientV3. It was for some very strange reason not pushing across any data (this wasted alot of my time). So switched to  MSGraphClientV3 (https://learn.microsoft.com/en-us/sharepoint/dev/spfx/use-msgraph) and was able to extract it out using: https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/Messages .. got to love graph explorer. Most likely the 'Onedrive' and 'events today' items will follow in the same vein as the email retrieval logic.
 
 I think my greatest pain will always be setting up the spfx dev environment. It always seems to trip me up as there seems to many different ways to do it and with pnp transitioning to v2- v3 a while back doesnt help either.
 
 ·       How cool it looks and feels (great UI/UX) > to be honest I'm not a UI person so I'm not that great in designing. Give me a mock up however and I'm gold.
 
-·       How useful the component might be - this dashboard could be quite useful for my current workplace - defense has us locked down pretty tight so to get all the info in one place is great. Given time I will probably tidy it up to include onedrive - recent docs and possibly a search. 
+·       How useful the component might be - this dashboard could be quite useful for my current workplace - defense has us locked down pretty tight so to get all the info in one place is great. Given time I will probably tidy it up to include onedrive - recent docs, any events today (calendar event sync) and possibly a search. 
 
 ·       Integrating Office UI Fabric - done
 
